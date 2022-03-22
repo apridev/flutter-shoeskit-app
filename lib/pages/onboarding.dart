@@ -103,7 +103,9 @@ class _OnboardingState extends State<Onboarding> {
                                 color: productColor
                               ),
                               child: TextButton(
-                                onPressed: (){},
+                                onPressed: (){
+                                  Navigator.pushNamed(context, '/login_page');
+                                },
                                 child: Text('Masuk', style: primaryTextStyle.copyWith(
                                   fontSize: 12,
                                   fontWeight: semiBold
@@ -118,7 +120,9 @@ class _OnboardingState extends State<Onboarding> {
                                 color: primaryColor
                               ),
                               child: TextButton(
-                                onPressed: (){},
+                                onPressed: (){
+                                  Navigator.pushNamed(context, '/register_page');
+                                },
                                 child: Text('Daftar', style: whiteTextStyle.copyWith(
                                   fontSize: 12,
                                   fontWeight: semiBold
@@ -134,7 +138,9 @@ class _OnboardingState extends State<Onboarding> {
                       children: [
                         OnBoardNavBtn(
                           name: 'Masuk',
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/login_page');
+                          },
                         ),
                         Row(
                           children: List.generate(
