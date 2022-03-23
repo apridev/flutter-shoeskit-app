@@ -215,7 +215,9 @@ class _RegisterPageState extends State<RegisterPage> {
             color: primaryColor
           ),
           child: TextButton(
-            onPressed: (){},
+            onPressed: (){
+              Navigator.pushNamed(context, '/main_page');
+            },
             child: Text(
               'Daftar', style: whiteTextStyle.copyWith(
                 fontSize: 14,
@@ -243,10 +245,15 @@ class _RegisterPageState extends State<RegisterPage> {
               SizedBox(
                 width : 4
               ),
-              Text(
-                'Masuk', style: blueTextStyle.copyWith(
-                  fontSize: 12,
-                  fontWeight: semiBold
+              InkWell(
+                onTap: (){
+                  Navigator.pushNamed(context, '/login_page');
+                },
+                child: Text(
+                  'Masuk Sakarang', style: blueTextStyle.copyWith(
+                    fontSize: 12,
+                    fontWeight: semiBold
+                  ),
                 ),
               )
             ],

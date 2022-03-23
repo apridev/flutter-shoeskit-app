@@ -7,6 +7,7 @@ Color inputColor = Color(0xff919498);
 Color blueColor = Color(0xff39A9CB);
 Color onboardingColor = Color(0xffEDEDED);
 Color backgroundColor1 = Color(0xffFFFFFF);
+Color iconNavbarColor = Color(0xffD1D1D1);
 
 double defaultMargin = 30.0;
 

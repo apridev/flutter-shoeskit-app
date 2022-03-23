@@ -146,7 +146,9 @@ class _LoginPageState extends State<LoginPage> {
             color: primaryColor
           ),
           child: TextButton(
-            onPressed: (){},
+            onPressed: (){
+              Navigator.pushNamed(context, '/main_page');
+            },
             child: Text('Masuk', style: whiteTextStyle.copyWith(
               fontSize: 14,
               fontWeight: semiBold
