@@ -62,7 +62,9 @@ class _RegisterPageState extends State<RegisterPage> {
               Expanded(
                 child: TextFormField(
                   decoration: InputDecoration.collapsed(
-                      hintText: 'Masukan Nama', hintStyle: inputTextStyle),
+                      hintText: 'Masukan Nama', 
+                      hintStyle: TextStyle(fontSize: 14, color: inputColor,)
+                    ),
                 ),
               )
             ],
@@ -102,7 +104,9 @@ class _RegisterPageState extends State<RegisterPage> {
               Expanded(
                 child: TextFormField(
                   decoration: InputDecoration.collapsed(
-                      hintText: 'Masukan Username', hintStyle: inputTextStyle),
+                      hintText: 'Masukan Username', 
+                      hintStyle: TextStyle(fontSize: 14, color: inputColor,),
+                  ),
                 ),
               )
             ],
@@ -142,7 +146,9 @@ class _RegisterPageState extends State<RegisterPage> {
               Expanded(
                 child: TextFormField(
                   decoration: InputDecoration.collapsed(
-                      hintText: 'Masukan Email', hintStyle: inputTextStyle),
+                      hintText: 'Masukan Email', 
+                      hintStyle: TextStyle(fontSize: 14, color: inputColor,)
+                  ),
                 ),
               )
             ],
@@ -184,7 +190,8 @@ class _RegisterPageState extends State<RegisterPage> {
                   obscureText: isHiddenPassword,
                   decoration: InputDecoration.collapsed(
                       hintText: 'Masukan Password', 
-                      hintStyle: inputTextStyle),
+                      hintStyle: TextStyle(fontSize: 14, color: inputColor,)
+                  ),
                 ),
               ),
               InkWell(

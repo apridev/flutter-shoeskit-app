@@ -207,6 +207,7 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
+          // !Product
           Container(
             margin: EdgeInsets.only(
                 top: 20, left: defaultMargin, right: defaultMargin),
@@ -225,11 +226,16 @@ class _HomePageState extends State<HomePage> {
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  ProductPopulerTile(
-                    image: 'assets/images/product_1.png',
-                    kategory: 'Nike',
-                    name: 'Nike Air Max Axis ',
-                    price: '\$ 189.00',
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.pushNamed(context, '/product_page');
+                    },
+                    child: ProductPopulerTile(
+                      image: 'assets/images/product_1.png',
+                      kategory: 'Nike',
+                      name: 'Nike Air Max Axis ',
+                      price: '\$ 189.00',
+                    ),
                   ),
                   ProductPopulerTile(
                     image: 'assets/images/product_2.png',

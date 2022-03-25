@@ -120,6 +120,7 @@ class SearchPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       TextButton(
+                        onPressed: () {  },
                         child: Text(
                           'Terpopuler',
                           style: primaryTextStyle.copyWith(
@@ -143,6 +144,7 @@ class SearchPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       TextButton(
+                        onPressed: () {  },
                         child: Text(
                           'Semua',
                           style: primaryTextStyle.copyWith(

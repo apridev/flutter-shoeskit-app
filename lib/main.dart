@@ -8,6 +8,7 @@ import 'package:shoeskit/home/search_page.dart';
 import 'package:shoeskit/onboarding_data.dart';
 import 'package:shoeskit/pages/login_page.dart';
 import 'package:shoeskit/pages/onboarding.dart';
+import 'package:shoeskit/pages/product_page.dart';
 import 'package:shoeskit/pages/register_page.dart';
 
 void main() {
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         '/profile_page':(context) => ProfilePage(),
         '/cart_page':(context) => CartPage(),
         '/main_page':(context) => MainPage(),
+        '/product_page':(context) => ProductPage(),
 
       },
     );

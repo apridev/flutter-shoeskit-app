@@ -73,7 +73,9 @@ class _LoginPageState extends State<LoginPage> {
               Expanded(
                 child: TextFormField(
                   decoration: InputDecoration.collapsed(
-                      hintText: 'Masukan email', hintStyle: inputTextStyle),
+                      hintText: 'Masukan email', 
+                      hintStyle: TextStyle(fontSize: 14, color: inputColor,)
+                  ),
                 ),
               )
             ],
@@ -115,7 +117,8 @@ class _LoginPageState extends State<LoginPage> {
                   obscureText: isHiddenPassword,
                   decoration: InputDecoration.collapsed(
                       hintText: 'Masukan Password', 
-                      hintStyle: inputTextStyle),
+                      hintStyle: TextStyle(fontSize: 14, color: inputColor,),
+                  ),
                 ),
               ),
               InkWell(
