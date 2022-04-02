@@ -108,9 +108,14 @@ class ProductPage extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Image.asset(
-                              'assets/icons/cart_icon_black.png',
-                              width: 18,
+                            GestureDetector(
+                              onTap: (){
+                                Navigator.pushNamed(context, '/cart_page');
+                              },
+                              child: Image.asset(
+                                'assets/icons/cart_icon_black.png',
+                                width: 18,
+                              ),
                             )
                           ],
                         ),

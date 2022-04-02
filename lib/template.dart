@@ -8,6 +8,7 @@ Color blueColor = Color(0xff39A9CB);
 Color onboardingColor = Color(0xffEDEDED);
 Color backgroundColor1 = Color(0xffFFFFFF);
 Color iconNavbarColor = Color(0xffD1D1D1);
+Color subtitleColor = Color(0xffB0B0B0);
 
 double defaultMargin = 30.0;
 
@@ -28,6 +29,10 @@ TextStyle whiteTextStyle = GoogleFonts.montserrat(
 
 TextStyle blueTextStyle = GoogleFonts.montserrat(
   color: blueColor
+);
+
+TextStyle subtitleTextStyle = GoogleFonts.montserrat(
+  color: subtitleColor
 );
 
 FontWeight reguler = FontWeight.w400;

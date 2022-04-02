@@ -6,6 +6,7 @@ import 'package:shoeskit/home/main_page.dart';
 import 'package:shoeskit/home/profile_page.dart';
 import 'package:shoeskit/home/search_page.dart';
 import 'package:shoeskit/onboarding_data.dart';
+import 'package:shoeskit/pages/checkout_page.dart';
 import 'package:shoeskit/pages/login_page.dart';
 import 'package:shoeskit/pages/onboarding.dart';
 import 'package:shoeskit/pages/product_page.dart';
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
         '/cart_page':(context) => CartPage(),
         '/main_page':(context) => MainPage(),
         '/product_page':(context) => ProductPage(),
+        '/checkout_page':(context) => CheckOutPage(),
 
       },
     );
